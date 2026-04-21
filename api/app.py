@@ -37,7 +37,7 @@ class Classifier(nn.Module):
 
 # Load model
 model = Classifier()
-model.load_state_dict(torch.load("../digit_recognizer_model.pth", map_location=torch.device("cpu")))
+model.load_state_dict(torch.load("digit_recognizer_model.pth", map_location=torch.device("cpu")))
 model.eval()
 
 
