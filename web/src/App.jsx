@@ -310,6 +310,10 @@ function App() {
         )}
       </div>
 
+      {/* Footer */}
+      <footer className="footer">
+        <p>Developed by Aaditya Mittal</p>
+      </footer>
     </div>
   )
 }
