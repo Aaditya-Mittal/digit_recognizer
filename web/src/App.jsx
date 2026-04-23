@@ -1,7 +1,8 @@
 import { useState, useRef, useEffect, useCallback } from 'react'
 import './App.css'
 
-const API_URL = 'http://localhost:5000'
+// Use environment variable, fallback to local if not set
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000'
 
 function App() {
   const canvasRef = useRef(null)
